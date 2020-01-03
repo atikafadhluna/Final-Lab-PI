@@ -8,6 +8,7 @@ import sys
 import math
 
 
+
 def index(hashs, lists):
     for i in lists:
         if i in hashs:

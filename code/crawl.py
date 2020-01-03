@@ -27,7 +27,7 @@ with open ('../data/link/link.txt','w') as file:
                 content = soup.select_one('#isi')
                 for j in content('script'):
                     j.decompose()
-                src = Path()/'../data/crawling'/f'data{i}.txt'
+                src = Path()/'../data/crawling'/f'dokumen{i}.txt'
                 with open(src,'w') as dokumen:
                     dokumen.write(title+'\n')
                     dokumen.write(content.getText().strip())

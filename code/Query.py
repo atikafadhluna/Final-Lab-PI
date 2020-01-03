@@ -48,7 +48,7 @@ with open('data/link/link.txt', 'r') as link:
     links = link.read().split('\n')
     for doc, score in results:
         index = doc.split('.')
-        index = index[0].split('data')
+        index = index[0].split('dokumen')
         if score is '0' or int(top) is i:
             break
         try:

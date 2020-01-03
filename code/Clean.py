@@ -5,9 +5,9 @@ import os
 import sys
 
 
-def clean(data):
-    with open(f'../data/clean/{data[1]}', 'w') as file:
-        for index, line in enumerate(data[0].split('\n')):
+def clean(dokumen):
+    with open(f'../data/clean/{dokumen[1]}', 'w') as file:
+        for index, line in enumerate(dokumen[0].split('\n')):
             if index is 1:
                 main_sentence = line.split('.')
                 try:
